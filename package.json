@@ -14,6 +14,7 @@
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-visually-hidden": "^1.2.4",
     "@rainbow-me/rainbowkit": "^2.1.6",
     "@rainbow-me/rainbowkit-siwe-next-auth": "^0.4.1",
     "@tanstack/react-query": "^5.51.11",
@@ -29,7 +30,7 @@
     "siwe": "^2",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "viem": "2.17.0",
+    "viem": "^2.37.0",
     "wagmi": "^2.12.9"
   },
   "devDependencies": {

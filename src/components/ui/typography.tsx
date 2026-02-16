@@ -61,7 +61,6 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
       ? Slot
       : as ?? (variant ? variantElementMap[variant] : undefined) ?? "div";
     return (
-      // @ts-ignore
       <Comp
         className={cn(
           typographyVariants({ variant, className }),

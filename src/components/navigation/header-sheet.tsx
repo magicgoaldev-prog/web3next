@@ -1,6 +1,3 @@
-import Image from "next/image";
-// import logoBlack from "@/../assets/logo-black.svg";
-// import logoWhite from "@/../assets/logo-white.svg";
 import {
   Sheet,
   SheetContent,
@@ -36,25 +33,6 @@ export const HeaderSheet: React.FC = () => {
         </VisuallyHidden>
 
         <div className="mb-6">
-          {/* 
-          @
-          @@
-          @@@
-          @@@@ Replace Typography component with theme aware Image component for mobile view  
-          @@@
-          @@
-          @
-          */}
-          {/* <Image
-            src={logoBlack}
-            alt="mobile logo dark"
-            className="block w-40 dark:hidden"
-          />
-          <Image
-            src={logoWhite}
-            alt="mobile logo light"
-            className="hidden w-40 dark:block"
-          /> */}
           <Typography variant="h3" className="font-bold">
             Logo Placeholder
           </Typography>

@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { NextPage } from "next";
 
-// TODO: Fix 404 page causing entire layout to re-render
-
 const Custom404: NextPage = () => {
   return (
     <PageLayout

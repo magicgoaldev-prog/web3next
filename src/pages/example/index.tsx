@@ -5,56 +5,55 @@ import { ThemeToggler } from "@/components/ui/theme-toggler";
 import { Typography } from "@/components/ui/typography";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { NextPage } from "next";
+import {
+  EXAMPLE_PAGE_CONFIG,
+  TYPOGRAPHY_EXAMPLES,
+  BUTTON_EXAMPLES,
+  STYLES,
+} from "@/lib/example-constants";
 
 interface Props {}
-
-/**
- * This is an example page
- * - It shows how to use the Typography component
- * - It shows how to use the Button component
- * - It shows how to use the PageLayout component
- */
 
 const ExamplePage: NextPage<Props> = ({}) => {
   return (
     <PageLayout
-      title="Example Page"
-      description="This is an example page"
-      flexDirection="row"
-      justify="evenly"
-      align="start"
-      gap={12}
+      title={EXAMPLE_PAGE_CONFIG.title}
+      description={EXAMPLE_PAGE_CONFIG.description}
+      flexDirection={EXAMPLE_PAGE_CONFIG.layout.flexDirection}
+      justify={EXAMPLE_PAGE_CONFIG.layout.justify}
+      align={EXAMPLE_PAGE_CONFIG.layout.align}
+      gap={EXAMPLE_PAGE_CONFIG.layout.gap}
     >
-      <div className="flex flex-col gap-4">
-        <Typography variant="h1">Example h1 header</Typography>
-        <Typography variant="h2">Example h2 header</Typography>
-        <Typography variant="h3">Example h3 header</Typography>
-        <Typography variant="h4">Example h4 header</Typography>
+      <div className={STYLES.typographyContainer}>
+        <Typography variant="h1">{TYPOGRAPHY_EXAMPLES.h1}</Typography>
+        <Typography variant="h2">{TYPOGRAPHY_EXAMPLES.h2}</Typography>
+        <Typography variant="h3">{TYPOGRAPHY_EXAMPLES.h3}</Typography>
+        <Typography variant="h4">{TYPOGRAPHY_EXAMPLES.h4}</Typography>
 
-        <Typography variant={"paragraph"}>Example paragraph text</Typography>
-        <Typography variant={"small"}>Example small text</Typography>
-        <Typography variant={"extraSmall"}>Example extra small text</Typography>
-        <Typography variant={"muted"}>Example muted text</Typography>
-        <Typography variant={"lead"}>Example lead text</Typography>
-        <Typography variant={"large"}>Example large text</Typography>
-        <Typography variant={"blockquote"}>Example blockquote text</Typography>
+        <Typography variant={"paragraph"}>{TYPOGRAPHY_EXAMPLES.paragraph}</Typography>
+        <Typography variant={"small"}>{TYPOGRAPHY_EXAMPLES.small}</Typography>
+        <Typography variant={"extraSmall"}>{TYPOGRAPHY_EXAMPLES.extraSmall}</Typography>
+        <Typography variant={"muted"}>{TYPOGRAPHY_EXAMPLES.muted}</Typography>
+        <Typography variant={"lead"}>{TYPOGRAPHY_EXAMPLES.lead}</Typography>
+        <Typography variant={"large"}>{TYPOGRAPHY_EXAMPLES.large}</Typography>
+        <Typography variant={"blockquote"}>{TYPOGRAPHY_EXAMPLES.blockquote}</Typography>
         <Typography variant={"list"}>
-          <li>Example list item 1</li>
-          <li>Example list item 2</li>
-          <li>Example list item 3</li>
+          {TYPOGRAPHY_EXAMPLES.list.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </Typography>
-        <Typography variant={"inlineCode"}>Example inline code</Typography>
+        <Typography variant={"inlineCode"}>{TYPOGRAPHY_EXAMPLES.inlineCode}</Typography>
       </div>
 
-      <div className="flex flex-col gap-8 justify-center items-center">
-        <Typography variant="h1">Button Examples</Typography>
+      <div className={STYLES.buttonContainer}>
+        <Typography variant="h1">{BUTTON_EXAMPLES.title}</Typography>
         <ThemeToggler />
-        <Button>Default Button</Button>
-        <Button variant="destructive">Destructive Button</Button>
-        <Button variant="outline">Outline Button</Button>
-        <Button variant="secondary">Secondary Button</Button>
-        <Button variant="ghost">Ghost Button</Button>
-        <Button variant="link">Link Button</Button>
+        <Button>{BUTTON_EXAMPLES.variants.default}</Button>
+        <Button variant="destructive">{BUTTON_EXAMPLES.variants.destructive}</Button>
+        <Button variant="outline">{BUTTON_EXAMPLES.variants.outline}</Button>
+        <Button variant="secondary">{BUTTON_EXAMPLES.variants.secondary}</Button>
+        <Button variant="ghost">{BUTTON_EXAMPLES.variants.ghost}</Button>
+        <Button variant="link">{BUTTON_EXAMPLES.variants.link}</Button>
         <ConnectButton />
         <ConnectWalletButton />
       </div>

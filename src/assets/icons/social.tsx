@@ -1,9 +1,3 @@
-/**
- * Icons from SimpleIcons
- * @Source
- * https://simpleicons.org/
- */
-
 export const TelegramIcon = () => {
   return (
     <svg

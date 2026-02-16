@@ -1,7 +1,3 @@
-// import logoDark from "@/assets/dark-logo.svg";
-// import logoLight from "@/assets/light-logo.svg";
-// import logo from "@/assets/logo-symbol.svg";
-import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggler } from "../ui/theme-toggler";
 import { Button } from "../ui/button";
@@ -94,47 +90,12 @@ export const Navbar: React.FC = () => {
     <div className="fixed z-50 flex w-full justify-between items-center border-b border-neutral-400/50 bg-white/50 p-4 backdrop-blur-xl dark:bg-black/50 md:px-16 md:py-4">
       <div className="flex-1 hidden md:block">
         <Link href="/" className="flex items-center justify-start">
-          {/* 
-          @
-          @@
-          @@@
-          @@@@ Replace Typography component with theme aware Image components  
-          @@@
-          @@
-          @
-          */}
-          {/* <Image
-            src={logoDark}
-            alt="dark mode logo"
-            className="block w-40 dark:hidden"
-          />
-          <Image
-            src={logoLight}
-            alt="light mode logo"
-            className="hidden w-40 dark:block"
-          /> */}
           <Typography variant="h3" className="font-bold">
             Logo Placeholder
           </Typography>
         </Link>
       </div>
       <Link href={"/"} className="md:hidden">
-        {/* 
-          @
-          @@
-          @@@
-          @@@@ Replace Typography component with theme aware Image component for mobile view  
-          @@@
-          @@
-          @
-          */}
-        {/* <Image
-          src={logo}
-          alt="mobile logo icon"
-          className="block md:hidden"
-          width={30}
-          height={30}
-        /> */}
         <Typography variant="h3" className="font-bold">
           Logo Placeholder
         </Typography>

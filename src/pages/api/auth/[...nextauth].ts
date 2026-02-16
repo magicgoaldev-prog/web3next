@@ -1,14 +1,9 @@
-// Code in this file is based on https://docs.login.xyz/integrations/nextauth.js
-// with added process.env.VERCEL_URL detection to support preview deployments
-// and with auth option logic extracted into a 'getAuthOptions' function so it
-// can be used to get the session server-side with 'getServerSession'
 import { IncomingMessage } from "http";
 import { NextApiRequest, NextApiResponse } from "next/types";
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { getCsrfToken } from "next-auth/react";
 import { SiweMessage } from "siwe";
-// https://next-auth.js.org/tutorials/securing-pages-and-api-routes
 
 export function getAuthOptions(req: IncomingMessage): NextAuthOptions {
   const providers = [
@@ -41,10 +36,6 @@ export function getAuthOptions(req: IncomingMessage): NextAuthOptions {
           }
 
           await siwe.verify({ signature: credentials?.signature || "" });
-
-          /**
-           * You can add your own logic here to handle user after sign in.
-           */
 
           return {
             id: siwe.address,
@@ -81,7 +72,6 @@ export function getAuthOptions(req: IncomingMessage): NextAuthOptions {
         return session;
       },
     },
-    // https://next-auth.js.org/configuration/providers/oauth
     providers,
     secret: process.env.NEXTAUTH_SECRET,
     session: {
@@ -90,8 +80,6 @@ export function getAuthOptions(req: IncomingMessage): NextAuthOptions {
   };
 }
 
-// For more information on each option (and a full list of options) go to
-// https://next-auth.js.org/configuration/options
 export default async function auth(req: NextApiRequest, res: NextApiResponse) {
   const authOptions = getAuthOptions(req);
 
@@ -104,7 +92,6 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
     req.method === "GET" &&
     req.query.nextauth.find((value: any) => value === "signin");
 
-  // Hide Sign-In with Ethereum from default sign page
   if (isDefaultSigninPage) {
     authOptions.providers.pop();
   }

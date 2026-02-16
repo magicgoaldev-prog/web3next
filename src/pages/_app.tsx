@@ -30,8 +30,6 @@ export const monsterrat = Montserrat({
   weight: "500",
 });
 
-// TODO: wagmi to change default theme based on the user's system preference
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider config={config}>

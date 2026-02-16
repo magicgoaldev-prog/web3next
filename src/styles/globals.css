@@ -29,11 +29,8 @@ a {
   color: aqua;
 }
 
-/* Add your custom styles for themes here */
-
 @layer base {
   :root {
-    /* CSS: .bg-gradient { background: var(--gradient) } */
     --gradient: linear-gradient(to top left, #000c40, #607d8b);
     --background: 243 100% 98.26%;
     --foreground: 243 10% 0.52%;
@@ -71,7 +68,6 @@ a {
     --radius: 0.5rem;
   }
   .dark {
-    /* CSS: .bg-gradient { background: var(--gradient) } */
     --gradient: linear-gradient(to top left, #2b5876, #4e4376);
 
     --background: 217 30.55% 2.56%;
