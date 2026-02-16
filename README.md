@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **Next.js + Rainbowkit + SIWE + shadcn Template**
 
 Live Demo: [https://next-web3-template-umber.vercel.app/](https://next-web3-template-umber.vercel.app/)
@@ -190,3 +191,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📢 **Contact**
 
 For any questions or inquiries, feel free to reach out via [GitHub issues](https://github.com/yourusername/next-web3-template/issues) or open a discussion. We're happy to hear from the community and help with any issues you may encounter.
+=======
+# web3next
+>>>>>>> 7948e13771dce1ab4bbc48ba199e756b2f972814
