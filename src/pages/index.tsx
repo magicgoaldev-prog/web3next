@@ -18,7 +18,7 @@ const HomePage: NextPage = () => {
       </Typography>
 
       <Link
-        href="https://github.com/new?template_name=next-web3-template&template_owner=CJskii"
+        href="https://github.com/new?template_name=web3next&template_owner=magicgoaldev-prog"
         target="_blank"
         className="my-12"
       >
@@ -36,7 +36,7 @@ const HomePage: NextPage = () => {
 
         <div className="flex gap-4">
           <Link
-            href="https://github.com/CJskii/next-web3-template"
+            href="https://github.com/magicgoaldev-prog/web3next"
             target="_blank"
           >
             <Button className="gap-2" variant={"link"}>
@@ -46,7 +46,7 @@ const HomePage: NextPage = () => {
           </Link>
 
           <Link
-            href="https://github.com/CJskii/next-web3-template/stargazers"
+            href="https://github.com/magicgoaldev-prog/web3next/stargazers"
             target="_blank"
           >
             <Button className="gap-2" variant={"link"}>
