@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # **Next.js + Rainbowkit + SIWE + shadcn Template**
-
-Live Demo: [https://next-web3-template-umber.vercel.app/](https://next-web3-template-umber.vercel.app/)
 
 A **Next.js** Web3 project template, powered by **TypeScript**, **RainbowKit**, **Wagmi**, **Shadcn**, and **TailwindCSS**. This template is designed to streamline the creation of Web3 applications with **SIWE (Sign-In With Ethereum)** authentication, a theme toggler, and modern design patterns.
 
@@ -47,7 +44,7 @@ The **Next.js + SIWE Template** aims to provide developers with a quick and effi
    Alternatively, you can clone the repository using the CLI:
 
    ```bash
-   git clone https://github.com/CJskii/next-web3-template.git my-web3-app
+   git clone https://github.com/magicgoaldev-prog/web3next.git my-web3-app
    cd my-web3-app
 
    ```
@@ -87,7 +84,7 @@ We welcome contributions to improve this template. Here's how you can get involv
 - Clone your fork: Clone your forked repository to your local machine.
 
 ```bash
-git clone https://github.com/yourusername/next-web3-template.git
+git clone https://github.com/yourusername/web3next.git
 cd next-web3-template
 ```
 
@@ -116,7 +113,7 @@ git push origin feature/your-feature-name
 
 ## 🎯 **Feature Requests**
 
-Have an idea for a new feature? We'd love to hear from you! Please [open an issue](https://github.com/CJskii/next-web3-template/issues) with a detailed description of the feature you'd like to see added to this template.
+Have an idea for a new feature? We'd love to hear from you! Please [open an issue](https://github.com/magicgoaldev-prog/web3next/issues) with a detailed description of the feature you'd like to see added to this template.
 
 Feel free to include:
 
@@ -191,6 +188,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📢 **Contact**
 
 For any questions or inquiries, feel free to reach out via [GitHub issues](https://github.com/yourusername/next-web3-template/issues) or open a discussion. We're happy to hear from the community and help with any issues you may encounter.
-=======
-# web3next
->>>>>>> 7948e13771dce1ab4bbc48ba199e756b2f972814
